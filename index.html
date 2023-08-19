@@ -15,12 +15,24 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .customFont {
+        font-family: "Work Sans";
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-[#F8F8F8] customFont">
     <!-- header section  -->
     <section class="bg-[#F9F6E2]">
-      <div class="hero min-h-fit">
+      <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse gap-9">
           <img
             src="./images/Summer 1.png"
@@ -28,13 +40,15 @@
           />
           <div class="text-center">
             <p class="mb-8">---SALE FEVER---</p>
-            <h1 class="text-4xl font-bold">
+            <h1 class="lg:text-4xl text-2xl font-bold">
               Purchase TK 200 or <br />
               above & get <span class="text-red-400"> 20% off</span>
             </h1>
             <div class="text-center mt-8">
               <span class="font-bold mr-2 text-clip">Use Promo Code</span>
-              <button class="btn btn-primary bg-[#E527B2] border-none">
+              <button
+                class="btn btn-primary bg-[#E527B2] border-none hover:bg-[#E527B2] text-white px-6 text-center"
+              >
                 SELL200
               </button>
             </div>
@@ -46,7 +60,7 @@
     <!-- card container  -->
 
     <section
-      class="container mx-auto flex flex-col lg:flex-row gap-4 justify-center mt-32 my-20"
+      class="container mx-auto flex flex-col lg:flex-row gap-4 justify-center py-20"
     >
       <div class="w-3/4 mx-auto">
         <!-- card frist layer -->
@@ -55,7 +69,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             <!-- 1. frist card -->
             <div
-              class="card bg-base-100 shadow-md p-4"
+              class="card bg-base-100 shadow-sm p-4"
               onclick="handelClick(this)"
             >
               <figure class="p-10 bg-[#1111110D]">
@@ -102,7 +116,7 @@
 
             <!-- 1.second card -->
             <div
-              class="card bg-base-100 shadow-md p-4"
+              class="card bg-base-100 shadow-sm p-4"
               onclick="handelClick(this)"
             >
               <figure class="p-10 bg-[#1111110D]">
@@ -148,7 +162,7 @@
             </div>
             <!-- 1.third card -->
             <div
-              class="card bg-base-100 shadow-md p-4"
+              class="card bg-base-100 shadow-sm p-4"
               onclick="handelClick(this)"
             >
               <figure class="p-10 bg-[#1111110D]">
@@ -198,12 +212,12 @@
         <!-- second layer -->
 
         <div class="mt-10">
-          <h1 class="text-2xl font-bold mb-3">Furniture</h1>
+          <h1 class="text-2xl font-bold mb-3">Sportswear</h1>
           <!-- card frist layer -->
           <!-- 2. frist card -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             <div
-              class="card bg-base-100 shadow-md p-4"
+              class="card bg-base-100 shadow-sm p-4"
               onclick="handelClick(this)"
             >
               <figure class="p-10 bg-[#1111110D]">
@@ -250,7 +264,7 @@
 
             <!-- 2.second card -->
             <div
-              class="card bg-base-100 shadow-md p-4"
+              class="card bg-base-100 shadow-sm p-4"
               onclick="handelClick(this)"
             >
               <figure class="p-10 bg-[#1111110D]">
@@ -296,7 +310,7 @@
             </div>
             <!-- 1.third card -->
             <div
-              class="card bg-base-100 shadow-md p-4"
+              class="card bg-base-100 shadow-sm p-4"
               onclick="handelClick(this)"
             >
               <figure class="p-10 bg-[#1111110D]">
@@ -341,20 +355,167 @@
               </div>
             </div>
           </div>
+
+          <!-- thirdCard layer -->
+        </div>
+
+        <div class="mt-10">
+          <h1 class="text-2xl font-bold mb-3">Furniture</h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- 3. frist card -->
+            <div
+              class="card bg-base-100 shadow-sm p-4"
+              onclick="handelClick(this)"
+            >
+              <figure class="p-10 bg-[#1111110D]">
+                <img
+                  src="./images/prod4.png"
+                  alt="prod4"
+                  class="rounded-xl w-44 h-32"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+
+                <h2 class="card-title">Single Relax Chair</h2>
+                <p>185.00 TK</p>
+              </div>
+            </div>
+
+            <!-- 3.second card -->
+            <div
+              class="card bg-base-100 shadow-sm p-4"
+              onclick="handelClick(this)"
+            >
+              <figure class="p-10 bg-[#1111110D]">
+                <img
+                  src="./images/prod5.png"
+                  alt="prod5"
+                  class="rounded-xl w-44 h-32"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+
+                <h2 class="card-title">Children play</h2>
+                <p>299.00 TK</p>
+              </div>
+            </div>
+            <!-- 3.third card -->
+            <div
+              class="card bg-base-100 shadow-sm p-4"
+              onclick="handelClick(this)"
+            >
+              <figure class="p-10 bg-[#1111110D]">
+                <img
+                  src="./images/prod6.png"
+                  alt="prod6"
+                  class="rounded-xl w-44 h-32"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+
+                <h2 class="card-title">Flexible Sofa</h2>
+                <p>339.00 TK</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="w-3/4 lg:w-1/4 mt-12 min-h-0 lg:min-h-[15vh] mx-auto mb-3">
-        <div class="shadow-md py-5 px-4">
+        <div class="shadow-sm bg-white py-5 px-4">
           <h1 class="text-xl font-bold">Have coupon?</h1>
           <div class="flex items-center mt-3">
             <input
               type="text"
               placeholder="Coupon code"
-              class="input input-bordered w-full max-w-xs"
+              class="input input-bordered w-full max-w-xl text-sm outline-none rounded-none rounded-l-lg"
               id="inputCoupon"
             />
             <button
-              class="btn btn-accent text-white bg-[#E527B2] hover:bg-[#E527B2] rounded-sm roun mr-3 border-none"
+              class="btn btn-accent text-white bg-[#E527B2] hover:bg-[#E527B2] rounded-sm roun mr-3 border-none rounded-r-lg"
               id="applyBtn"
             >
               Apply
@@ -362,7 +523,7 @@
           </div>
         </div>
 
-        <div class="shadow-md mt-5 p-4 min-h-[28rem]">
+        <div class="mt-5 p-4 min-h-[28rem] bg-white">
           <ul id="nameList" class="border-b-2 mb-4 pb-4"></ul>
 
           <div class="font-bold space-y-3">
