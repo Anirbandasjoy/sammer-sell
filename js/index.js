@@ -1,7 +1,6 @@
 let itemCount = 0;
 let totalAmout = 0;
 let disCountTotal = 0;
-
 const parchase = getId("purchaseBtn");
 const applybtn = getId("applyBtn");
 const discountAdd = getId("discount");
@@ -11,7 +10,6 @@ const nameList = getId("nameList");
 const discountTotalAdd = getId("discountTotal");
 applybtn.disabled = true;
 parchase.disabled = true;
-
 function handelClick(data) {
   itemCount++;
 
@@ -22,7 +20,6 @@ function handelClick(data) {
   priceCalculation(data.childNodes[3].childNodes[5].innerText.split(" ")[0]);
   totalAdd.innerText = totalAmout.toFixed(2);
 }
-
 applybtn.addEventListener("click", function () {
   const inputCoupon = getId("inputCoupon").value;
   if (inputCoupon == "SELL200") {
@@ -39,8 +36,8 @@ goHomeBtn.addEventListener("click", function () {
   totalAdd.innerText = "00";
   discountAdd.innerText = "00";
   discountTotalAdd.innerText = "00";
+  totalAmout = 0;
 
-  // Remove all child elements from the nameList
   while (nameList.firstChild) {
     nameList.removeChild(nameList.firstChild);
   }
@@ -48,7 +45,6 @@ goHomeBtn.addEventListener("click", function () {
   parchase.disabled = true;
   applybtn.disabled = true;
 });
-
 function priceCalculation(p) {
   const price = Number(p);
   const total = (totalAmout = totalAmout + price);
@@ -58,10 +54,8 @@ function priceCalculation(p) {
   if (total !== 0) {
     parchase.disabled = false;
   }
-  console.log(total);
   return total;
 }
-
 function getId(id) {
   return document.getElementById(id);
 }
