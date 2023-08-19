@@ -202,7 +202,10 @@
           <!-- card frist layer -->
           <!-- 2. frist card -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            <div class="card bg-base-100 shadow-md p-4">
+            <div
+              class="card bg-base-100 shadow-md p-4"
+              onclick="handelClick(this)"
+            >
               <figure class="p-10 bg-[#1111110D]">
                 <img
                   src="./images/prod4.png"
@@ -246,7 +249,10 @@
             </div>
 
             <!-- 2.second card -->
-            <div class="card bg-base-100 shadow-md p-4">
+            <div
+              class="card bg-base-100 shadow-md p-4"
+              onclick="handelClick(this)"
+            >
               <figure class="p-10 bg-[#1111110D]">
                 <img
                   src="./images/prod5.png"
@@ -289,7 +295,10 @@
               </div>
             </div>
             <!-- 1.third card -->
-            <div class="card bg-base-100 shadow-md p-4">
+            <div
+              class="card bg-base-100 shadow-md p-4"
+              onclick="handelClick(this)"
+            >
               <figure class="p-10 bg-[#1111110D]">
                 <img
                   src="./images/prod6.png"
@@ -334,7 +343,7 @@
           </div>
         </div>
       </div>
-      <div class="w-3/4 lg:w-1/4 mt-12 min-h-[15vh] mx-auto mb-3">
+      <div class="w-3/4 lg:w-1/4 mt-12 min-h-0 lg:min-h-[15vh] mx-auto mb-3">
         <div class="shadow-md py-5 px-4">
           <h1 class="text-xl font-bold">Have coupon?</h1>
           <div class="flex items-center mt-3">
@@ -352,7 +361,13 @@
         </div>
 
         <div class="shadow-md mt-5 p-4 min-h-[28rem]">
-          <ul id="nameList"></ul>
+          <ul id="nameList" class="border-b-2 mb-4 pb-4"></ul>
+
+          <div class="font-bold space-y-3">
+            <p>Total price : <span>00</span> Tk</p>
+            <p>Discount : <span>00</span> Tk</p>
+            <p>Total : <span>00</span> Tk</p>
+          </div>
         </div>
       </div>
     </section>
