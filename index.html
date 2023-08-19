@@ -351,9 +351,11 @@
               type="text"
               placeholder="Coupon code"
               class="input input-bordered w-full max-w-xs"
+              id="inputCoupon"
             />
             <button
               class="btn btn-accent text-white bg-[#E527B2] hover:bg-[#E527B2] rounded-sm roun mr-3 border-none"
+              id="applyBtn"
             >
               Apply
             </button>
@@ -364,10 +366,36 @@
           <ul id="nameList" class="border-b-2 mb-4 pb-4"></ul>
 
           <div class="font-bold space-y-3">
-            <p>Total price : <span>00</span> Tk</p>
-            <p>Discount : <span>00</span> Tk</p>
-            <p>Total : <span>00</span> Tk</p>
+            <p>Total price : <span id="total">00</span> Tk</p>
+            <p>Discount : <span id="discount">00</span> Tk</p>
+            <p>Total : <span id="discountTotal">00</span> Tk</p>
           </div>
+        </div>
+        <div class="text-center -mt-6">
+          <button
+            id="purchaseBtn"
+            class="btn btn-primary mx-auto text-center bg-[#E527B2] hover:bg-[#E527B2] text-white border-none"
+            onclick="my_modal_1.showModal()"
+          >
+            Make Purchase
+          </button>
+          <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box py-18">
+              <img src="./images/congo.png" class="mx-auto w-25 h-28" alt="" />
+              <h3 class="font-bold text-3xl">Congratulations</h3>
+              <p class="py-4 text-xs">Your Purchase the product</p>
+              <div class="modal-action">
+                <div class="mx-auto">
+                  <button
+                    id="goHome"
+                    class="btn btn-primary bg-[#E527B2] hover:bg-[#E527B2] text-white border-none px-8"
+                  >
+                    Go Home
+                  </button>
+                </div>
+              </div>
+            </form>
+          </dialog>
         </div>
       </div>
     </section>
